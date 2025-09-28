@@ -1,0 +1,24 @@
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="my-8">
+        <div class="flex items-center justify-center mb-8">
+            <div class="grid grid-cols-1">
+                <div class="grid-item">
+                    <a href="{{ currentPath }}">
+                        <img [src]="currentPath" alt="{{ configItem.title }}" class="cursor-zoom-in">
+                    </a>
+                </div>
+            </div>
+        </div>
+        @if (galleryLength() > 1) {
+            <div class="grid gap-4 grid-cols-4">
+                @for (image of configItem.gallery; track image.path) {
+                    <div class="grid-item">
+                        <img [src]="image.path" class="w-full h-full object-cover cursor-pointer" (click)="currentPath = image.path"> 
+                    </div>                
+                }
+            </div>            
+        }
+    </div>
+
+    <p class="mt-8 mb-16 text-base text-gray-500">{{ configItem.description }}</p>
+</div>

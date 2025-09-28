@@ -1,0 +1,46 @@
+    <div class="relative inline-block text-left" #dropdownContainer>
+      <!-- Dropdown Button -->
+      <a
+        class="hover:cursor-pointer md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative inline-flex"
+        (click)="toggleDropdown()"
+        [attr.aria-expanded]="isOpen"
+      >
+        галерея
+        <!-- Chevron -->
+        <svg
+          class="w-7 h-7 mt-1 -mr-1 transition-transform duration-200"
+          [class.rotate-180]="isOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+
+      <!-- Dropdown Menu -->
+       @if (isOpen) {
+        <div
+          class="absolute right-0 w-56 mt-2 origin-top-right bg-[#333333] divide-y divide-gray-100 shadow-lg focus:outline-none z-50 animate-in fade-in slide-in-from-top-2 duration-100"
+          role="menu"
+          aria-orientation="vertical"
+        >
+          <div class="py-1" role="none">
+            <!-- Menu Items -->
+             @for (item of menuItems; track item) {
+              <button
+                class="group flex items-center w-full px-4 py-2 text-sm text-white hover:bg-white hover:text-black focus:bg-white focus:text-black focus:outline-none transition-colors duration-150"
+                role="menuitem"
+                (click)="scrollToFragment(item.value)"
+              >
+                {{ item.label | uppercase}}
+              </button>               
+             }
+          </div>
+        </div>
+      }
+    </div>

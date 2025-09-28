@@ -1,0 +1,55 @@
+@if (showNavbar) {
+    <nav class="cream-bg shadow-sm border-b border-gray-200 ">
+        <div class="px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center md:h-32 h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a [routerLink]="['/']">
+                        <img src="i/logo.png" alt="Logo" class="min-h-12 mr-16 md:block hidden sm:hidden"/>
+                    </a>					
+                    <a [routerLink]="['/']">
+                        <h1 class="text-nowrap text-1l md:text-4xl sm:block">Дарья Хлебникова</h1>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block pt-2">
+                    <div class="ml-10 flex space-x-4">
+                        <a [routerLink]="['/about']" class="text-nowrap md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative">о художнике</a>
+                        <app-dropdown></app-dropdown>
+                        <a [routerLink]="['/contacts']" class="md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative">контакты</a>
+                        
+                        <a href="#" class="hidden md:text-2xl font-weight-300 hover:text-gray-900 pl-3 py-2 rounded-md relative">ru</a>						
+                        <a href="#" class="hidden md:text-2xl font-weight-300 hover:text-gray-900 py-2 rounded-md relative">en</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button (click)="toggleMobileMenu()" class="text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+                @if (mobileMenuIsOpen) {
+                <div class="md:hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
+                    <a [routerLink]="['/about']" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">о художнике</a>
+                    <a href="#graphics" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">графика и живопись</a>
+                    <a href="#digital" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">digital</a>
+                    <a href="#illustrations" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">иллюстрации</a>
+                    <a href="#prints" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">принты</a>
+                    <a [routerLink]="['/contacts']" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">контакты</a>
+                        
+                    <a href="#" class="hidden hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">ru</a>
+                    <a href="#" class="hidden text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">en</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </nav>
+}
