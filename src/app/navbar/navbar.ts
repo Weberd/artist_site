@@ -3,13 +3,16 @@ import { RouterLink } from '@angular/router';
 import { DropdownComponent } from '../dropdown/dropdown';
 import { Router, ActivatedRoute, NavigationEnd  } from '@angular/router';
 import { filter, map } from 'rxjs/operators';
-
+import {TranslatePipe} from "@ngx-translate/core";
+import { LanguageService } from '../services/language/language';
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   imports: [
     RouterLink,
-    DropdownComponent
+    DropdownComponent,
+    TranslatePipe
   ],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
@@ -18,7 +21,15 @@ export class Navbar {
   public mobileMenuIsOpen = false;
   public showNavbar = true;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private languageService: LanguageService
+  ) {}
+
+  setLanguage(lang: string) {
+    this.languageService.setLanguage(lang);
+  }
 
   toggleMobileMenu() {
     this.mobileMenuIsOpen = !this.mobileMenuIsOpen;

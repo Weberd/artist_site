@@ -8,19 +8,19 @@
                         <img src="i/logo.png" alt="Logo" class="min-h-12 mr-16 md:block hidden sm:hidden"/>
                     </a>					
                     <a [routerLink]="['/']">
-                        <h1 class="text-nowrap text-1l md:text-4xl sm:block">Дарья Хлебникова</h1>
+                        <h1 class="text-nowrap text-1l md:text-4xl sm:block">{{ 'name' | translate}}</h1>
                     </a>
                 </div>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:block pt-2">
                     <div class="ml-10 flex space-x-4">
-                        <a [routerLink]="['/about']" class="text-nowrap md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative">о художнике</a>
+                        <a [routerLink]="['/about']" class="text-nowrap md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative">{{ 'about_artist' | translate}}</a>
                         <app-dropdown></app-dropdown>
-                        <a [routerLink]="['/contacts']" class="md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative">контакты</a>
+                        <a [routerLink]="['/contacts']" class="md:text-2xl font-weight-200 hover:text-gray-900 px-3 py-2 rounded-md uppercase relative">{{ 'contacts' | translate}}</a>
                         
-                        <a href="#" class="hidden md:text-2xl font-weight-300 hover:text-gray-900 pl-3 py-2 rounded-md relative">ru</a>						
-                        <a href="#" class="hidden md:text-2xl font-weight-300 hover:text-gray-900 py-2 rounded-md relative">en</a>
+                        <a (click)="setLanguage('ru')" class="md:text-2xl font-weight-300 hover:text-gray-900 pl-3 py-2 rounded-md cursor-pointer relative">ru</a>						
+                        <a (click)="setLanguage('en')" class="md:text-2xl font-weight-300 hover:text-gray-900 py-2 rounded-md cursor-pointer relative">en</a>
                     </div>
                 </div>
                 
@@ -38,15 +38,15 @@
                 @if (mobileMenuIsOpen) {
                 <div class="md:hidden">
                     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
-                    <a [routerLink]="['/about']" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">о художнике</a>
-                    <a href="#graphics" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">графика и живопись</a>
-                    <a href="#digital" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">digital</a>
-                    <a href="#illustrations" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">иллюстрации</a>
-                    <a href="#prints" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">принты</a>
-                    <a [routerLink]="['/contacts']" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">контакты</a>
+                    <a [routerLink]="['/about']" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">{{ 'about_artist' | translate}}</a>
+                    <a href="#graphics" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">{{ 'graphics' | translate}}</a>
+                    <a href="#digital" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">{{ 'digital' | translate}}</a>
+                    <a href="#illustrations" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">{{ 'illustrations' | translate}}</a>
+                    <a href="#prints" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">{{ 'prints' | translate}}</a>
+                    <a [routerLink]="['/contacts']" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium uppercase">{{ 'contacts' | translate}}</a>
                         
-                    <a href="#" class="hidden hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">ru</a>
-                    <a href="#" class="hidden text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">en</a>
+                    <a (click)="setLanguage('ru')" class="hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium cursor-pointer">ru</a>
+                    <a (click)="setLanguage('en')" class="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium cursor-pointer">en</a>
                     </div>
                 </div>
             }

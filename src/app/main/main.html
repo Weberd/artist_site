@@ -3,205 +3,205 @@
 <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16" id="graphics">
-            <h2 class="text-3xl md:text-4xl text-gray-900 mb-4 uppercase">графика и живопись</h2>
+            <h2 class="text-3xl md:text-4xl text-gray-900 mb-4 uppercase">{{ 'graphics' | translate }}</h2>
         </div>
         
         <div>
-            <h3 class="text-1l md:text-2xl text-gray-900 mb-4 uppercase">метаморфозы</h3>
-            <p class="mb-8">Серия, над которой я работаю с 2022 года по настоящее время. Ее объединяет тема контрастов и превращений людей, существ, божеств, форм, стилей и чувств.</p>
+            <h3 class="text-1l md:text-2xl text-gray-900 mb-4 uppercase">{{ 'metamorphosis' | translate }}</h3>
+            <p class="mb-8">{{ 'metamorphosis_description' | translate }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mb-8">
             <a [routerLink]="['/gallery/embrace']">
-                <img src="/i/preview/metamorphosis/embrace-preview.jpg" class="mx-auto"> 
+                <img src="/i/preview/metamorphosis/embrace-preview.jpg" class="mx-auto">
                 <div class="text-center mt-2">
-                    <p>Объятие</p>
-                    <p>2023 35х55см темпера, акварель на доске</p>
+                    <p>{{ 'embrace' | translate }}</p>
+                    <p>{{ 'embrace_main_description' | translate }}</p>
                 </div>
             </a>
             
             <a [routerLink]="['/gallery/prince-amigdala']">
                 <img src="/i/preview/metamorphosis/prince-amigdala-preview.jpg" class="mx-auto"> 
                 <div class="text-center mt-2">
-                    <p>Принц Амигдалы в ангельском дворце зеркал</p>
-                    <p>2024 40х60см тушь, изографы на бумаге</p>
+                    <p>{{ 'prince_amigdala' | translate }}</p>
+                    <p>{{ 'prince_amigdala_main_description' | translate }}</p>
                 </div>                
             </a>
 
             <a [routerLink]="['/gallery/night']">
                 <img src="/i/preview/metamorphosis/night-preview.jpg" class="mx-auto"> 
                 <div class="text-center mt-2">
-                    <p>Ночь</p>
-                    <p>2022 50х80см изограф, линеры на бумаге</p>
+                    <p>{{ 'night' | translate }}</p>
+                    <p>{{ 'night_main_description' | translate }}</p>
                 </div>                
             </a>
 
             <a [routerLink]="['/gallery/snake-and-flower']">
                 <img src="/i/preview/metamorphosis/snake-and-flower-preview.jpg" class="mx-auto"> 
                 <div class="text-center mt-2">
-                    <p>Змей и Цветок</p>
-                    <p>2022 38х54см темпера, акварель, изограф, карандаш на бумаге</p>
+                    <p>{{ 'snake_and_flower' | translate }}</p>
+                    <p>{{ 'snake_and_flower_main_description' | translate }}</p>
                 </div>                
             </a>
         </div>
 
         <div class="grid grid-cols-1">
-            <h3 class="text-1l md:text-2xl text-gray-900 mt-8 mb-4 uppercase">явления</h3>
+            <h3 class="text-1l md:text-2xl text-gray-900 mt-8 mb-4 uppercase">{{ 'phenomena' | translate }}</h3>
             <p class="mb-8">
-                Серия моих ранних работ, созданных с 2013 по 2019 год в разное время, обьединенных темой встреч человека с разными явлениями и видениями в мире и самом себе.
+                {{ 'phenomena_description' | translate }}
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mb-8">
                 <a [routerLink]="['/gallery/road']">
                     <img src="/i/preview/metamorphosis/road-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Дорога</p>
-                        <p>2014 70х108см изограф на бумаге</p>
+                        <p>{{ 'road' | translate }}</p>
+                        <p>{{ 'road_main_description' | translate }}</p>
                     </div>                
                 </a>
 
                 <a [routerLink]="['/gallery/meeting']">
                     <img src="/i/preview/metamorphosis/meeting-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Встреча</p>
-                        <p>2013 50х80см изограф, ручка на бумаге</p>
+                        <p>{{ 'meeting' | translate }}</p>
+                        <p>{{ 'meeting_main_description' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/river']">
                     <img src="/i/preview/metamorphosis/river-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Река</p>
-                        <p>2018 50х80см бумага, изограф</p>
+                        <p>{{ 'river' | translate }}</p>
+                        <p>{{ 'river_main_description' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/labyrinth']">
                     <img src="/i/preview/metamorphosis/labyrinth-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Лабиринт</p>
-                        <p>2019 50х80см бумага, изограф</p>
+                        <p>{{ 'labyrinth' | translate }}</p>
+                        <p>{{ 'labyrinth_main_description' | translate }}</p>
                     </div>
                 </a>              
             </div>
         </div>
 
         <div>
-            <h3 class="text-1l md:text-2xl text-gray-900 mb-4 uppercase">духи</h3>
+            <h3 class="text-1l md:text-2xl text-gray-900 mb-4 uppercase">{{ 'spirtis' | translate }}</h3>
             <p class="mb-8">
-                Серия работ, которую я начала с 2023 года, посвященная фантастическим полуабстрактным существам.
+                {{ 'spirtis_description' | translate }}
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24">
                 <a [routerLink]="['/gallery/angel']">
                     <img src="/i/preview/spirits/angel-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Ангел</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'angel' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/dancer']">
                     <img src="/i/preview/spirits/dancer-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Танцор</p>
-                        <p>2025 21х29см</p>                        
+                        <p>{{ 'dancer' | translate }}</p>
+                        <p>2025 21х29{{ 'cm' | translate }}</p>                        
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/knight']">
                     <img src="/i/preview/spirits/knight-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Рыцарь</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'knight' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/bells']">
                     <img src="/i/preview/spirits/bells-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Колокольчики</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'bells' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/elephant']">
                     <img src="/i/preview/spirits/elephant-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Слон</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'elephant' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/prince']">
                     <img src="/i/preview/spirits/prince-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Принц</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'prince' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/princess']">
                     <img src="/i/preview/spirits/princess-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Принцесса</p>
-                        <p>2025 21х29см</p>
+                        <p>{{ 'princess' | translate }}</p>
+                        <p>2025 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/rhino']">
                     <img src="/i/preview/spirits/rhino-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Носорог</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'rhino' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/shadows']">
                     <img src="/i/preview/spirits/shadows-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Тени</p>
-                        <p>2025 21х29см</p>
+                        <p>{{ 'shadows' | translate }}</p>
+                        <p>2025 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/tongue-twisters']">
                     <img src="/i/preview/spirits/tongue-twisters-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Скороговорки</p>
-                        <p>2025 21х29см</p>
+                        <p>{{ 'tongue_twisters' | translate }}</p>
+                        <p>2025 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/statues']">
                     <img src="/i/preview/spirits/statues-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Статуи</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'statues' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/roses']">
                     <img src="/i/preview/spirits/roses-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Розы</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'roses' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/shell']">
                     <img src="/i/preview/spirits/shell-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Ракушка</p>
-                        <p>2023 21х29см</p>
+                        <p>{{ 'shell' | translate }}</p>
+                        <p>2023 21х29{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/sapphires']">
                     <img src="/i/preview/spirits/sapphires-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Сапфиры</p>
-                        <p>2024 28х36см</p>
+                        <p>{{ 'sapphires' | translate }}</p>
+                        <p>2024 28х36{{ 'cm' | translate }}</p>
                     </div>
                 </a>
             </div>
@@ -222,11 +222,11 @@
 <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div id="digital" class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl text-gray-900 mb-4 uppercase">digital</h2>
+            <h2 class="text-3xl md:text-4xl text-gray-900 mb-4 uppercase">{{ 'digital' | translate }}</h2>
         </div>
 
         <div>
-            <h3 class="text-1l md:text-2xl text-gray-900 mb-12 mt-12 uppercase">впечатления</h3>
+            <h3 class="text-1l md:text-2xl text-gray-900 mb-12 mt-12 uppercase">{{ 'impressions' | translate }}</h3>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24">
                 <a [routerLink]="['/gallery/impressions7']">
@@ -268,13 +268,13 @@
         </div>
 
         <div>
-            <h3 class="text-1l md:text-2xl text-gray-900 mb-12 mt-12 uppercase">состояния</h3>
+            <h3 class="text-1l md:text-2xl text-gray-900 mb-12 mt-12 uppercase">{{ 'states' | translate }}</h3>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24">
                 <a [routerLink]="['/gallery/temple']">
                     <img src="/i/preview/digital/temple-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Храм</p>
+                        <p>{{ 'temple' | translate }}</p>
                         <p>2020</p>
                     </div>
                 </a>
@@ -282,7 +282,7 @@
                 <a [routerLink]="['/gallery/sun']">
                     <img src="/i/preview/digital/sun-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Солнце</p>
+                        <p>{{ 'sun' | translate }}</p>
                         <p>2017</p>
                     </div>
                 </a>
@@ -290,7 +290,7 @@
                 <a [routerLink]="['/gallery/tree_print']">
                     <img src="/i/preview/digital/tree_print-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Лес</p>
+                        <p>{{ 'forest' | translate }}</p>
                         <p>2018</p>
                     </div>
                 </a>
@@ -298,7 +298,7 @@
                 <a [routerLink]="['/gallery/earendil']">
                     <img src="/i/preview/digital/earendil-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Эарендил</p>
+                        <p>{{ 'earendil' | translate }}</p>
                         <p>2019</p>
                     </div>
                 </a>
@@ -306,7 +306,7 @@
                 <a [routerLink]="['/gallery/ungolianth']">
                     <img src="/i/preview/digital/ungolianth-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Унголиант</p>
+                        <p>{{ 'ungolianth' | translate }}</p>
                         <p>2017</p>
                     </div>
                 </a>
@@ -314,7 +314,7 @@
                 <a [routerLink]="['/gallery/lutian']">
                     <img src="/i/preview/digital/lutian-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Песня Лютиэн</p>
+                        <p>{{ 'lutian' | translate }}</p>
                         <p>2017</p>
                     </div>
                 </a>
@@ -328,7 +328,7 @@
 <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div id="illustrations" class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl text-gray-900 mb-16 uppercase">иллюстрации</h2>
+            <h2 class="text-3xl md:text-4xl text-gray-900 mb-16 uppercase">{{ 'illustrations' | translate }}</h2>
 
              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24">
                 <a [routerLink]="['/gallery/mtg']">
@@ -376,14 +376,14 @@
         </div>
 
         <div id="prints" class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl text-gray-900 mb-16 uppercase">принты</h2>
+            <h2 class="text-3xl md:text-4xl text-gray-900 mb-16 uppercase">{{ 'prints' | translate }}</h2>
 
              <div class="grid grid-cols-1 md:grid-cols-3  gap-8 md:gap-24">
                 <a [routerLink]="['/gallery/print-plains']">
                     <img src="/i/preview/prints/print-plains-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>PLAINS</p>
-                        <p>29x42см</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
@@ -391,7 +391,7 @@
                     <img src="/i/preview/prints/print-mountain-first-part-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>MOUNTAIN 1</p>
-                        <p>29x42см</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
@@ -399,39 +399,39 @@
                     <img src="/i/preview/prints/print-mountain-second-part-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>MOUNTAIN 2</p>
-                        <p>29x42см</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/print-sun']">
                     <img src="/i/preview/prints/print-sun-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Солнце</p>
-                        <p>29x42см</p>
+                        <p>{{ 'sun' | translate }}</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>                
 
                 <a [routerLink]="['/gallery/print-dragon']">
                     <img src="/i/preview/prints/print-dragon-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Встреча</p>
-                        <p>29x42см</p>
+                        <p>{{ 'meeting' | translate }}</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/print-forest']">
                     <img src="/i/preview/prints/print-forest-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Лес</p>
-                        <p>29x42см</p>
+                        <p>{{ 'forest' | translate }}</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
                 <a [routerLink]="['/gallery/print-prince']">
                     <img src="/i/preview/prints/print-prince-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
-                        <p>Принц</p>
-                        <p>29x42см</p>
+                        <p>{{ 'prince' | translate }}</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
 
@@ -439,21 +439,21 @@
                     <img src="/i/preview/prints/print-moorland-haunt-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>MOORLAND HAUNT</p>
-                        <p>29x42см</p>
+                        <p>29x42{{ 'cm' | translate }}</p>
                     </div>
                 </a>
              </div>
         </div>
        
         <div id="limited-prints">
-            <h3 class="text-1l md:text-2xl text-gray-900 mb-4 uppercase">limited edition</h3>
+            <h3 class="text-1l md:text-2xl text-gray-900 mb-4 uppercase">{{ 'limited_prints' | translate }}</h3>
 
              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24">
                 <a [routerLink]="['/gallery/limited-print-plains']">
                     <img src="/i/preview/limited-prints/limited-print-plains-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>PLAINS</p>
-                        <p>43x60см Ilford 320g matte paper</p>
+                        <p>43x60{{ 'cm' | translate }} Ilford 320g matte paper</p>
                     </div>
                 </a>
 
@@ -461,7 +461,7 @@
                     <img src="/i/preview/limited-prints/limited-print-mountain-first-part-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>MOUNTAIN 1</p>
-                        <p>43x60см Ilford 320g matte paper</p>
+                        <p>43x60{{ 'cm' | translate }} Ilford 320g matte paper</p>
                     </div>
                 </a>
 
@@ -469,7 +469,7 @@
                     <img src="/i/preview/limited-prints/limited-print-mountain-second-part-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>MOUNTAIN 2</p>
-                        <p>43x60см Ilford 320g matte paper</p>
+                        <p>43x60{{ 'cm' | translate }} Ilford 320g matte paper</p>
                     </div>
                 </a>
 
@@ -477,7 +477,7 @@
                     <img src="/i/preview/limited-prints/limited-print-mountain-third-part-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                         <p>MOUNTAIN 3</p>
-                        <p>43x60см Ilford 320g matte paper</p>
+                        <p>43x60{{ 'cm' | translate }} Ilford 320g matte paper</p>
                     </div>
                 </a>
 
@@ -485,7 +485,7 @@
                     <img src="/i/preview/limited-prints/limited-print-moorland-haunt-preview.jpg" class="mx-auto"> 
                     <div class="text-center mt-2">
                        <p>MOORLAND HAUNT</p>
-                       <p>43x60см Ilford 320g matte paper</p>
+                       <p>43x60{{ 'cm' | translate }} Ilford 320g matte paper</p>
                     </div>
                 </a>
              </div>

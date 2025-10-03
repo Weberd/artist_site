@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { content, ContentItemType } from '../app.content';
+import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-gallery',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './gallery.html',
   styleUrl: './gallery.css'
 })

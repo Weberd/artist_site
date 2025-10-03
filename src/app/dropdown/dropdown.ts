@@ -1,23 +1,23 @@
 // dropdown.component.ts
 import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-dropdown',
   templateUrl: './dropdown.html',
   styleUrls: ['./dropdown.css'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
 })
 export class DropdownComponent {
   @ViewChild('dropdownContainer', { static: true }) dropdownContainer!: ElementRef;
 
   isOpen = false;
 
-  // Sample menu items - you can customize these
   menuItems = [
     { 
-      label: 'графика и живопись', 
+      label: 'graphics', 
       value: 'graphics',
     },
     { 
@@ -25,11 +25,11 @@ export class DropdownComponent {
       value: 'digital',
     },
     { 
-      label: 'иллюстрации', 
+      label: 'illustrations', 
       value: 'illustrations',
     },
     { 
-      label: 'принты', 
+      label: 'prints', 
       value: 'prints',
     }
   ];
