@@ -8,6 +8,41 @@ export type ContentItemType = {
 
 export const content: ContentItemType[] = [
     {
+        id: 'intergalactic',
+        title: 'Межгалактический ансамбль кристаллических гномов на планете жаб',
+        path: '/i/intergalactic1.jpg',
+        description: 'intergalactic_description',
+        gallery: [
+            {
+                path: '/i/intergalactic1.jpg',
+            },
+            {
+                path: '/i/intergalactic2.jpg',
+            },
+            {
+                path: '/i/intergalactic3.jpg',
+            },
+            {
+                path: '/i/intergalactic4.jpg',
+            },
+            {
+                path: '/i/intergalactic5.jpg',
+            },
+            {
+                path: '/i/intergalactic6.jpg',
+            },
+            {
+                path: '/i/intergalactic7.jpg',
+            },
+            {
+                path: '/i/intergalactic8.jpg',
+            },
+            {
+                path: '/i/intergalactic9.jpg',
+            }
+        ]
+    },
+    {
         id: 'embrace',
         title: 'обьятие',
         path: '/i/embrace1.jpg',
